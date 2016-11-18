@@ -7,7 +7,8 @@ ENV HOME /home/$USERNAME
 RUN useradd --user-group --create-home --shell /bin/false $USERNAME && \
     mkdir $HOME/app
 
-RUN npm install -g ethereumjs-testrpc truffle
+RUN npm install -g ethereumjs-testrpc truffle && \
+    npm set progress=false
 
 RUN chown -R $USERNAME:$USERNAME $HOME/mobileapp
 
