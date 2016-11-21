@@ -1,4 +1,4 @@
-FROM node:6.7.0
+FROM node:7.0.0
 MAINTAINER Marcio Mansur <mrabeloo@gmail.com>
 
 ENV USERNAME dev
@@ -20,6 +20,3 @@ EXPOSE $PORT
 
 WORKDIR $HOME/app
 VOLUME $HOME/app
-
-ENTRYPOINT []
-CMD []
