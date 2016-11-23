@@ -21,4 +21,4 @@ EXPOSE $PORT
 WORKDIR $HOME/app
 VOLUME $HOME/app
 
-CMD ['testrpc']
+CMD ["testrpc"]
